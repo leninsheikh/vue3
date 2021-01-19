@@ -1,17 +1,17 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import Home from '../views/Home.vue'
 import CompositionAPI from '../views/CompositionAPI'
+import VeeValidate from "@/views/VeeValidate";
 
 const routes = [
-  {
-    path: '/',
-    name: 'Home',
-    component: Home
-  },
   {
     path: '/composition',
     name: 'composition',
     component: CompositionAPI
+  },
+  {
+    path: '/vee-validate',
+    name: 'veeValidate',
+    component: VeeValidate
   },
   {
     path: '/about',

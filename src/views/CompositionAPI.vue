@@ -1,5 +1,5 @@
 <template>
-  <div style="display: flex; flex-direction: column">
+  <div class="vertical">
       <Ref />
       <Lifecycle />
   </div>
