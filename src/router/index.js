@@ -1,11 +1,17 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/Home.vue'
+import CompositionAPI from '../views/CompositionAPI'
 
 const routes = [
   {
     path: '/',
     name: 'Home',
     component: Home
+  },
+  {
+    path: '/composition',
+    name: 'composition',
+    component: CompositionAPI
   },
   {
     path: '/about',
