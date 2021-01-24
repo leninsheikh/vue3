@@ -1,21 +1,20 @@
 <template>
   <div class="vertical">
-      <input v-model="value" type="text" />
-      <p>{{ errorMessage }}</p>
+      <SimpleInput/>
   </div>
 </template>
 
 <script>
-import {useField} from "vee-validate";
-import { string } from 'yup'
+import SimpleInput from "@/components/vee-validate/SimpleInput";
+
 
 export default {
+    components: { SimpleInput },
+
     setup() {
-        const { errorMessage, value } = useField('name', string().required().min(8));
 
         return {
-            value,
-            errorMessage,
+
         };
     }
 }
