@@ -20,8 +20,8 @@ export default {
     setup() {
         // Define a validation schema
         const schema = object({
-            email: string().required().email(),
-            password: string().required().min(8),
+            email: string().required().email().label("Email"),
+            password: string().required().min(8).email("Password"),
         });
 
         // Create a form context with the validation schema
